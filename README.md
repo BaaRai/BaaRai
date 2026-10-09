@@ -1,4 +1,4 @@
-### Hi, I'm BaaRai
+### LET ME COOK
 
 I do security research and bug bounties, and I contribute fixes to open source projects. When I find a bug and the fix is clearer than the report, I send a PR.
 
