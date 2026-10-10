@@ -8,9 +8,11 @@ Yes, most of my public repos are forks. That is on purpose: each one carries a b
 
 - [morluto/rea #1130](https://github.com/morluto/rea/pull/1130): app analysis crashed whenever a JavaScript module imported itself, self edges are forbidden by the graph schema. Skipped at composition and disclosed in limitations.
 - [morluto/rea #1285](https://github.com/morluto/rea/pull/1285): the real-Hopper verifier's interior navigation probe assumed the first instruction is longer than one byte. Now anchored to the first multi-byte instruction.
+- [morluto/rea #1374](https://github.com/morluto/rea/pull/1374): the Ghidra verifier skipped dense jump tables. It now proves them on an optimized fixture.
 
 #### Open PRs
 
+- [morluto/rea #1382](https://github.com/morluto/rea/pull/1382): keeps the cross-format branch callee multi-block in the Ghidra verifier fixtures.
 - [commaai/connect #822](https://github.com/commaai/connect/pull/822) and [#827](https://github.com/commaai/connect/pull/827): hiring challenge bounties. Video-driven playback state, and url handling as the single source of truth for navigation.
 - [openclaw/openclaw #167161](https://github.com/openclaw/openclaw/pull/167161): zombie processes accumulated after Codex app-server transports closed on Linux. Added identity-scoped reaping.
 - [NousResearch/hermes-agent #135110](https://github.com/NousResearch/hermes-agent/pull/135110): cron occurrences consumed by the gate left no trace. Now they record a durable incident row.
