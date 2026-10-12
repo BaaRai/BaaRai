@@ -6,16 +6,28 @@ Yes, most of my public repos are forks. That is on purpose: each one carries a b
 
 #### Merged upstream
 
-- [morluto/rea #1130](https://github.com/morluto/rea/pull/1130): app analysis crashed whenever a JavaScript module imported itself, self edges are forbidden by the graph schema. Skipped at composition and disclosed in limitations.
-- [morluto/rea #1285](https://github.com/morluto/rea/pull/1285): the real-Hopper verifier's interior navigation probe assumed the first instruction is longer than one byte. Now anchored to the first multi-byte instruction.
-- [morluto/rea #1374](https://github.com/morluto/rea/pull/1374): the Ghidra verifier skipped dense jump tables. It now proves them on an optimized fixture.
+[morluto/rea](https://github.com/morluto/rea), six merges in under a week:
+
+- [#1130](https://github.com/morluto/rea/pull/1130): app analysis crashed whenever a JavaScript module imported itself.
+- [#1285](https://github.com/morluto/rea/pull/1285): the Hopper verifier's interior navigation probe assumed the first instruction is longer than one byte.
+- [#1374](https://github.com/morluto/rea/pull/1374): the Ghidra verifier skipped dense jump tables. Now proven on an optimized fixture.
+- [#1382](https://github.com/morluto/rea/pull/1382): clang folds cross-branch tail calls into one basic block. The fixture now survives the optimizer.
+- [#1447](https://github.com/morluto/rea/pull/1447): new HarmonyOS package analysis tool, hap/hsp/app-pack inventory.
+- [#1929](https://github.com/morluto/rea/pull/1929): setup client support for the DSH agent harness.
+
+[Niko1221/Strata](https://github.com/Niko1221/Strata): loop guard for periodic one-word loops, shipped in v0.1.42 ([commit](https://github.com/Niko1221/Strata/commit/253e09f1)).
 
 #### Open PRs
 
-- [morluto/rea #1382](https://github.com/morluto/rea/pull/1382): keeps the cross-format branch callee multi-block in the Ghidra verifier fixtures.
-- [commaai/connect #822](https://github.com/commaai/connect/pull/822) and [#827](https://github.com/commaai/connect/pull/827): hiring challenge bounties. Video-driven playback state, and url handling as the single source of truth for navigation.
-- [openclaw/openclaw #167161](https://github.com/openclaw/openclaw/pull/167161): zombie processes accumulated after Codex app-server transports closed on Linux. Added identity-scoped reaping.
-- [NousResearch/hermes-agent #135110](https://github.com/NousResearch/hermes-agent/pull/135110): cron occurrences consumed by the gate left no trace. Now they record a durable incident row.
+On rea: [#1889](https://github.com/morluto/rea/pull/1889) (wasm module admission), [#1892](https://github.com/morluto/rea/pull/1892) (firmware extraction gap reporting), [#1898](https://github.com/morluto/rea/pull/1898) (recordless legacy MIPS32 in Ghidra), [#1922](https://github.com/morluto/rea/pull/1922) (32-bit ARM lane in Ghidra).
+
+Elsewhere:
+
+- [commaai/connect #822](https://github.com/commaai/connect/pull/822): hiring challenge bounty, drive playback state from the video element.
+- [openclaw/openclaw #167161](https://github.com/openclaw/openclaw/pull/167161): zombie processes accumulated after Codex app-server transports closed on Linux.
+- [NousResearch/hermes-agent #135110](https://github.com/NousResearch/hermes-agent/pull/135110): cron occurrences consumed by the gate now record a durable incident row.
+- [bendlang/bend #1469](https://github.com/bendlang/bend/pull/1469): Process.run works on hosts without Bun.
+- [Autumn-27/Norma #3](https://github.com/Autumn-27/Norma/pull/3): recover real input token usage when the API reports zeros in message_start.
 - [codecrafters-io/build-your-own-x #2047](https://github.com/codecrafters-io/build-your-own-x/pull/2047): audited all 368 links in the README, replaced the 12 that are actually dead.
 - [monid-ai/monid #106](https://github.com/monid-ai/monid/pull/106): keep an explicit null consolidate output instead of restoring the raw payload.
 - [earendil-works/pi #10654](https://github.com/earendil-works/pi/issues/10654): mcp.json server url should expand env references like headers do. Fix is on my fork, waiting for a maintainer go-ahead before opening the PR (their gate).
