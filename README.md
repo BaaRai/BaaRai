@@ -4,6 +4,10 @@ I do security research and bug bounties, and I contribute fixes to open source p
 
 Yes, most of my public repos are forks. That is on purpose: each one carries a branch of mine on its way upstream (or already merged). I fork to contribute, not to collect.
 
+#### Building
+
+[ARTEX](https://github.com/BaaRai/ARTEX): an AI autonomous penetration testing system. I build it and run it daily for my own research.
+
 #### Merged upstream
 
 [morluto/rea](https://github.com/morluto/rea), six merges in under a week:
@@ -23,7 +27,6 @@ On rea: [#1889](https://github.com/morluto/rea/pull/1889) (wasm module admission
 
 Elsewhere:
 
-- [commaai/connect #822](https://github.com/commaai/connect/pull/822): hiring challenge bounty, drive playback state from the video element.
 - [openclaw/openclaw #167161](https://github.com/openclaw/openclaw/pull/167161): zombie processes accumulated after Codex app-server transports closed on Linux.
 - [NousResearch/hermes-agent #135110](https://github.com/NousResearch/hermes-agent/pull/135110): cron occurrences consumed by the gate now record a durable incident row.
 - [bendlang/bend #1469](https://github.com/bendlang/bend/pull/1469): Process.run works on hosts without Bun.
