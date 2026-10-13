@@ -6,7 +6,7 @@ Yes, most of my public repos are forks. That is on purpose: each one carries a b
 
 #### Building
 
-[ARTEX](https://github.com/BaaRai/ARTEX): an AI autonomous penetration testing system. I build it and run it daily for my own research.
+[ARTEX](https://github.com/BaaRai/ARTEX): an AI autonomous penetration testing system. I build it and run it daily for my own research, 44 merged pull requests of hardening and tooling so far.
 
 #### Merged upstream
 
@@ -21,19 +21,21 @@ Yes, most of my public repos are forks. That is on purpose: each one carries a b
 
 [Niko1221/Strata](https://github.com/Niko1221/Strata): loop guard for periodic one-word loops, shipped in v0.1.42 ([commit](https://github.com/Niko1221/Strata/commit/253e09f1)).
 
+[Autumn-27/Norma](https://github.com/Autumn-27/Norma): [#3](https://github.com/Autumn-27/Norma/pull/3) recover real input token usage when the API reports zeros in message_start.
+
 #### Open PRs
 
-On rea: [#1889](https://github.com/morluto/rea/pull/1889) (wasm module admission), [#1892](https://github.com/morluto/rea/pull/1892) (firmware extraction gap reporting), [#1898](https://github.com/morluto/rea/pull/1898) (recordless legacy MIPS32 in Ghidra), [#1922](https://github.com/morluto/rea/pull/1922) (32-bit ARM lane in Ghidra).
+On rea: [#1892](https://github.com/morluto/rea/pull/1892) (firmware extraction gap reporting), [#1898](https://github.com/morluto/rea/pull/1898) (recordless legacy MIPS32 in Ghidra), [#1922](https://github.com/morluto/rea/pull/1922) (32-bit ARM lane in Ghidra).
 
-Elsewhere:
+Other repos:
 
 - [openclaw/openclaw #167161](https://github.com/openclaw/openclaw/pull/167161): zombie processes accumulated after Codex app-server transports closed on Linux.
 - [NousResearch/hermes-agent #135110](https://github.com/NousResearch/hermes-agent/pull/135110): cron occurrences consumed by the gate now record a durable incident row.
 - [bendlang/bend #1469](https://github.com/bendlang/bend/pull/1469): Process.run works on hosts without Bun.
-- [Autumn-27/Norma #3](https://github.com/Autumn-27/Norma/pull/3): recover real input token usage when the API reports zeros in message_start.
 - [codecrafters-io/build-your-own-x #2047](https://github.com/codecrafters-io/build-your-own-x/pull/2047): audited all 368 links in the README, replaced the 12 that are actually dead.
 - [monid-ai/monid #106](https://github.com/monid-ai/monid/pull/106): keep an explicit null consolidate output instead of restoring the raw payload.
 - [earendil-works/pi #10654](https://github.com/earendil-works/pi/issues/10654): mcp.json server url should expand env references like headers do. Fix is on my fork, waiting for a maintainer go-ahead before opening the PR (their gate).
+- Proposals: [morluto/rea #2132](https://github.com/morluto/rea/issues/2132) (interactive TUI mode for driving rea), [Gen-Verse/RSI-Anything #2](https://github.com/Gen-Verse/RSI-Anything/issues/2) (security/CTF benchmark adapter).
 
 #### Elsewhere
 
